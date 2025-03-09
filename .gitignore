@@ -1,32 +1,66 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# Compiled object files, libraries, executables, and build artifacts
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.pdb
 *.lib
-
-# Executables
+*.dll
+*.exp
 *.exe
-*.out
-*.app
+*.ilk
+*.bsc
+*.sbr
+*.idb
+*.iobj
+*.ipdb
+*.res
+*.resources
+*.manifest
+*.lastbuildstate
+*.metagen
+*.refimpl.cache
+*.cachefile
+*.xdcmake
+
+# Visual Studio-specific files and folders
+.vs/
+*.sln
+*.vcxproj*
+*.opensdf
+*.sdf
+*.cache
+*.VC.db
+*.VC.VC.opendb
+*.vssscc
+*.vspscc
+*.Build.CppClean.log
+*.DotSettings*
+
+# User-specific and temporary files
+*.suo
+*.user
+*.ncb
+*.aps
+*.tlog
+*.local
+*.log
+*.ini
+*.tmp
+
+# Build output directories
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+[Xx]64/
+[Aa]rm*/
+
+# NuGet Packages
+packages/
+*.nupkg
+*.nuget/
+
+# Test results and ReSharper-related files
+TestResults/
+_ReSharper*/
+
+# Miscellaneous
+ComponentArt/
+.vsidx
