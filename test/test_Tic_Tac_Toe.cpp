@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "TicTacToe.cpp"  // Include your source file directly for simplicity in this example
+#include "../src/TicTacToe.h" 
 
 // Helper function to reset the board
 void resetBoard(char* spaces) {

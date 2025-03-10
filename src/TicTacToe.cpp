@@ -3,14 +3,9 @@
 #include <iostream>
 #include <ctime> 
 
+// Header Files
+#include "TicTacToe.h" 
 
-
-// Function Declarations
-void drawBoard(char* spaces);
-void playerMove(char* spaces, char player); 
-void AIMove(char* spaces, char player);
-bool checkWinner(char *spaces, char player, char computer); 
-bool checkTie(char *spaces); 
 
 // Function Definitions 
 void drawBoard(char* spaces)
@@ -123,49 +118,50 @@ bool checkTie(char* spaces)
 }
 
 
+// Commented out the main function to avoid redefining the main function error when compiling the test file
 
-int main()
-{
-	// 9 space board 
-	char spaces[9] = { ' ', ' ',' ', ' ',' ', ' ',' ', ' ',' ' };
-	char player = 'X'; 
-	char aI = 'O';
-	bool running = true; 
+// int main()
+// {
+// 	// 9 space board 
+// 	char spaces[9] = { ' ', ' ',' ', ' ',' ', ' ',' ', ' ',' ' };
+// 	char player = 'X'; 
+// 	char aI = 'O';
+// 	bool running = true; 
 
-	drawBoard(spaces); 
+// 	drawBoard(spaces); 
 
-	while(running)
-	{
-		// 
-		playerMove(spaces, player); 
-		drawBoard(spaces);
+// 	while(running)
+// 	{
+// 		// 
+// 		playerMove(spaces, player); 
+// 		drawBoard(spaces);
 
-		if (checkWinner(spaces, player, aI))
-		{
-			running = false; 
-			break; 
-		}
-		else if (checkTie(spaces))
-		{
-			running = false; 
-			break; 
-		}
+// 		if (checkWinner(spaces, player, aI))
+// 		{
+// 			running = false; 
+// 			break; 
+// 		}
+// 		else if (checkTie(spaces))
+// 		{
+// 			running = false; 
+// 			break; 
+// 		}
 
-		aIMove(spaces, aI); 
-		drawBoard(spaces); 
+// 		aIMove(spaces, aI); 
+// 		drawBoard(spaces); 
 
-		if (checkWinner(spaces, player, aI))
-		{
-			running = false;
-			break;
-		}
-		else if (checkTie(spaces))
-		{
-			running = false;
-			break;
-		}
+// 		if (checkWinner(spaces, player, aI))
+// 		{
+// 			running = false;
+// 			break;
+// 		}
+// 		else if (checkTie(spaces))
+// 		{
+// 			running = false;
+// 			break;
+// 		}
 
-	}
+// 	}
 
-	return 0; 
-}
+// 	return 0; 
+// }
