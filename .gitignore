@@ -64,3 +64,8 @@ _ReSharper*/
 # Miscellaneous
 ComponentArt/
 .vsidx
+
+# CMake and make build directory 
+build/
+CMakeCache.txt
+
