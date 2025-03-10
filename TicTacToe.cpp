@@ -3,7 +3,7 @@
 #include <iostream>
 #include <ctime> 
 
-using namespace std; // makes the names in teh std namespace accessible without needing to use the scope (::) operator 
+using namespace std; // makes the names in the std namespace accessible without needing to use the scope (::) operator 
 
 
 
